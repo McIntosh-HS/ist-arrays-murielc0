@@ -14,8 +14,6 @@ int main()
 	printf("%i %i %i %i %i\n", arr[0] + 1, arr[1] + 1, arr[2] + 1, arr[3] + 1, arr[4] + 1);
 	// write a new printf statement that adds 1 to each array element
 	// Hint: use the . command to repeat an insert of + 1 after each array element
-    // yyp
-    // f]a + 1<ESC>;.;.;.
 
 	return 0;
 }
