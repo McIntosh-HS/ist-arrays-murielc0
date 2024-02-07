@@ -1,5 +1,43 @@
 # Arrays in C
 
+## Array Assignments
+
+We will practice using arrays in two different ways. First, you will edit the intarray.c file to accept user input for all five of the array elements. The second exercise will be to create a character array to output a string, and then prompt the user for their name and store it in a second character array.
+
+### intarray.c
+
+For this exercise, delete the lines that set values for each array element, and then prompt the user for each value. Use `scanf` to store the user's input.
+
+```c
+int arr[5];
+
+printf("Enter your first number: ");
+scanf("%i", &arr[0]);
+
+// copy and paste the above two lines but change the prompt and which array element to store the user's input
+
+printf("%i %i %i %i %i\n", arr[0], arr[1], arr[2], arr[3], arr[4]);
+```
+
+### chararray.c
+
+In this exercise, you will create a new character array for the user's name. The chararray.c file already has one character array created to store your name. Edit the string to have your name in it. Then, create a new character array with enough elements to store a user supplied name. Prompt the user to enter their name, then output out a message like "Hello *user name*. It is nice to meet you. My name is *your name*".
+
+The `printf` and `scanf` functions use the `%s` format specifier for character arrays, usually called *strings*.
+
+```c
+char name[] = "First Last"; // edit this line
+char user[N];               // create this line and replace N with however many elements you think is necessary
+
+...
+
+printf("Hello %s. It is nice to meet you. My name is %s\n", ...);
+```
+
+In C, character arrays are treated somewhat specially. So when using `scanf`, we do not say *which* element to fill, since we intend to fill the entire array. An example `scanf` statement should look something like `scanf("%s", &chararray);
+
+## Array Notes
+
 Arrays in c allow a programmer to create a variable that can contain multiple of the same data type. For instance, if you want to create variables to store all the grades of a student, it may be better to use an array.
 
 ```c
@@ -38,7 +76,7 @@ grades[5] = 'a'; // 6th element
 grades[6] = 'f'; // 7th element
 ```
 
-## Assigning arrays using curly brace notation
+### Assigning arrays using curly brace notation
 
 An easier way to create and fill the elements of an array is by using a special curly brace notation. Here, we can create and fill our array in one line. You do not need to specify how large the array will be. The C compiler will infer from your array definition how long the array is.
 
@@ -55,4 +93,4 @@ temps[2]; // 3rd element of the array = 76.8
 temps[3]; // The last element of the array = 85.0
 ```
 
-
+### Creating strings using character arrays

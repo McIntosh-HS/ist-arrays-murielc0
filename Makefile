@@ -5,3 +5,6 @@ intarray: intarray.c
 
 curlyarray: curlyarray.c
 	gcc curlyarray.c -o curlyarray
+
+chararray: chararray.c
+	gcc chararray.c -o chararray
