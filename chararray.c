@@ -7,7 +7,7 @@ int main()
 	
 	// Prompt the user for their name
 	// Use scanf("%s", &user) to store the user's name
-	scanf("%s", user);
+	scanf("%s", &user);
 
 	printf("You name is %s...\n", , );
 
