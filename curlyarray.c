@@ -7,7 +7,8 @@ int main()
 	int arr[] = {3, 6, 9, 12, 14};
 
 
-	printf("%i %i %i %i %i\n", arr[0], arr[1], arr[2], arr[3], arr[4]);
+	printf("%3i %3i %3i %3i %3i\n", arr[0], arr[1], arr[2], arr[3], arr[4]);
+	printf("%3i %3i %3i %3i %3i\n", arr[0] % 3, arr[1] % 3, arr[2] % 3, arr[3] % 3, arr[4] % 3);
 	// write a new printf statement that finds the remainder of each element when divided by 3
 	// Hint: use the . command to repeat an insert of % 3 after each array element
 
